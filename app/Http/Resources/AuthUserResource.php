@@ -20,6 +20,9 @@ class AuthUserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'email' => $this->email,
+            'phoneNum' => $this->phoneNum,
+            'role' => $this->role,
+            'favoriteItems' => $this->favoriteItems,
             'email_verified_at' => $this->email_verified_at,
             'permissions' => $this->getAllPermissions()->map(function ($permission) {
                 return $permission->name;
