@@ -73,16 +73,19 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Customer User',
             'email' => 'customer@example.com',
+            'phoneNum' => '123-123-1230',
         ])->assignRole(RolesEnum::Customer);
 
         User::factory()->create([
             'name' => 'Driver User',
             'email' => 'driver@example.com',
+            'phoneNum' => '456-456-4560',
         ])->assignRole(RolesEnum::Driver);
 
         User::factory()->create([
             'name' => 'Manager User',
             'email' => 'manager@example.com',
+            'phoneNum' => '789-789-7890',
         ])->assignRole(RolesEnum::Manager);
     }
 }
